@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Whore;
+    src: url(fonts/Pixeboy-z8XGD.ttf);
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-button {
+
+    position: absolute;
+    border: 5px solid white;
+    text-align: center;
+    color: white;
+    font-size: 10vh;
+    font-family: Whore;
+    margin: 0;
+
+}
+
+#start-button>p {
+    margin: 0 auto;
+    padding: 0.1vh 10vh;
+}
+
+p {
+    color: white;
+    font-size: 10vh;
+    font-family: Whore;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+
+}
+#start-button:hover>p{
+    background-color:white;
+    color:black;
+}
+#head{
+    position: absolute;
+    align-self: start;
+}
+.well{
+    animation:hide 1s linear forwards;
+}
+@keyframes hide{
+    0%{opacity: 1;}
+    100%{opacity:0;}
+}

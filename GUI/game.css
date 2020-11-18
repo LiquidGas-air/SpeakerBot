@@ -1,0 +1,164 @@
+@font-face {
+    font-family: Whore;
+    src: url(fonts/Pixeboy-z8XGD.ttf);
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: black;
+
+}
+
+#textbox{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+    margin:0;
+    width: 95%;
+    height:20vh;
+    left:2.5%;
+    position:absolute;
+    border: 0.6vh solid white;
+}
+#say{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+    min-width:100%;
+    position:absolute;
+    margin:0 auto;
+    font-family: Whore;
+}
+#input{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+    position:absolute;
+    width:95%;
+    left:2.5%;
+    height:20%;
+    bottom:0;
+    display: grid;
+    grid-gap:1vh 1vh;
+    grid-template-areas: 
+                        'input_t input_t submit_b'
+                        'input_t input_t voice_b'
+                        ;
+}
+#input_text{
+    grid-area: input_t;
+    font-family: Whore;
+    font-size: 10vh;
+    color: white;
+    background: transparent;
+    border: 0.5vh solid white;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+}
+#input_submit{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+    background: transparent;
+    color: white;
+    font-family: Whore;
+    font-size: 5vh;
+    grid-area: submit_b;
+    border: 0.5vh solid white;
+}
+#input_voice{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+    grid-area:voice_b;
+    background: transparent;
+    color: white;
+    font-family: Whore;
+    font-size: 5vh;
+    border: 0.5vh solid white;
+}
+#skull{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+    position: absolute;
+    top:45%;
+    left:40%;
+    height:40%
+}
+#skull_up{
+    position: absolute;
+    grid-area:skull_up;
+    height:40%;
+    z-index: 100;
+    transform: translateY(-20vh);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+}
+
+#skull_down{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+    position: absolute;
+    grid-area:skull_down;
+    height:20%;
+    left:7.25vh;
+    top:1vh;
+}
+#input_submit:hover{
+    background-color: white;
+    color: black;
+}
+#input_voice:hover{
+    background-color: white;
+    color: black;
+}
+
+#say{
+    position:absolute;
+    font-family:Whore;
+    color: white;
+    font-size:10vh;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; 
+}
