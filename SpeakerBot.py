@@ -26,8 +26,7 @@ def buttono():
     except UnboundLocalError:
         print('!!!Say something')
     print('Закончили')
-    var=cleverbotfreeapi.cleverbot(voice, session="How are you?")
-    return voice,var
+    return voice
  
 
 @eel.expose
