@@ -2,14 +2,16 @@ import speech_recognition as sr
 import pyttsx3
 from pyttsx3.drivers import sapi5
 import eel
-import time
 import cleverbotfreeapi
 eel.init('GUI')
 query=0
-import pyttsx3
 engine = pyttsx3.init()
-voices = engine.getProperty('voices') 
-engine.setProperty('voice', voices[2].id)  
+voices = engine.getProperty('voices')  
+for voice in voices:
+    print('here')
+    if 'David' in voice.name:
+        print(voice.name)
+        engine.setProperty('voice', voice.id)
 print('maybe working')
 @eel.expose
 def buttono():
